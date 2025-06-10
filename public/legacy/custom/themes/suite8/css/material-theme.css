@@ -1,8 +1,21 @@
 /* Material Design theme overrides */
+:root {
+  --google-blue: #1a73e8;
+  --google-red: #d93025;
+  --google-yellow: #f9ab00;
+  --google-green: #34a853;
+  --google-gray: #f1f3f4;
+  --google-dark-gray: #5f6368;
+  --google-text: #202124;
+}
 button {
   border-radius: 0.25rem;
   box-shadow: 0 1px 2px rgba(0,0,0,0.14), 0 1px 3px rgba(0,0,0,0.12);
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+.btn {
+  border-radius: 0.25rem;
+  font-weight: 500;
 }
 button:hover, button:active {
   box-shadow: 0 3px 4px rgba(0,0,0,0.14), 0 1px 8px rgba(0,0,0,0.12);
@@ -17,21 +30,32 @@ input, .login-form select {
 .pagination-button {
   border-radius: 0.25rem;
 }
-.alerts-button { background-color: #d93025; }
+
+.card,
+.panel {
+  background-color: #fff;
+  border: 1px solid #dadce0;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(60,64,67,0.15);
+}
+.alerts-button { background-color: var(--google-red); }
 .alerts-button:hover, .alerts-button:active { background-color: #dc443a; }
-.quickcreate-button { background-color: #1a73e8; color: #fff; }
+.quickcreate-button { background-color: var(--google-blue); color: #fff; }
 .quickcreate-button:hover, .quickcreate-button:active { background-color: #3081ea; }
-.favourites-button { background-color: #f9ab00; }
+.favourites-button { background-color: var(--google-yellow); }
 .favourites-button:hover, .favourites-button:active { background-color: #f9b319; }
-.action-button { background-color: #1a73e8; }
+.action-button { background-color: var(--google-blue); }
 .action-button:hover { background-color: #3081ea; }
-.settings-button { background-color: #5f6368; }
+.settings-button { background-color: var(--google-dark-gray); }
 .settings-button:hover { background-color: #8f9195; }
-.modal-button-save { background-color: #1a73e8; }
-.modal-button-cancel { background-color: #5f6368; }
+.modal-button-save { background-color: var(--google-blue); }
+.modal-button-cancel { background-color: var(--google-dark-gray); }
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: var(--google-gray);
+  color: var(--google-text);
+  line-height: 1.5;
 }
 
 input,
@@ -49,12 +73,26 @@ ul.subTabs {
 .dashletPanel .h3Row,
 .navbar,
 .navbar-default {
-  background-color: #4285f4;
+  background-color: var(--google-blue);
   color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .list thead {
   background-color: #f1f3f4;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  color: var(--google-text);
+  font-weight: 500;
+}
+
+td {
+  color: var(--google-text);
 }
 
 .example-twitter + p {
@@ -63,4 +101,12 @@ ul.subTabs {
 
 .example-number {
   font: 140px/200px 'Roboto', Arial, sans-serif;
+}
+
+a {
+  color: var(--google-blue);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
