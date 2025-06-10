@@ -25,7 +25,7 @@
           gutterTop: 60,
           textSize: 10,
           titleSize: 16,
-          titleFont: 'Lato',
+          titleFont: 'Roboto',
           colors: ['#f08377', '#534d64', '#778591', '#bfcad3', '#d8f5ee'],
           tooltips: function (ind) {
             return chartLabels[ind] + " - " + chartData[ind];

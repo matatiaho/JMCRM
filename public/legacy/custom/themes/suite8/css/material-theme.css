@@ -29,3 +29,38 @@ input, .login-form select {
 .settings-button:hover { background-color: #8f9195; }
 .modal-button-save { background-color: #1a73e8; }
 .modal-button-cancel { background-color: #5f6368; }
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+input,
+select,
+textarea {
+  font-family: 'Roboto', Arial, Sans-serif;
+}
+
+.rgraph_chart_tooltips_css,
+.yui-skin-sam.masked #dlg.SuiteP-configureDashlet.yui-module.yui-overlay.yui-panel .hd,
+ul.subTabs {
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.dashletPanel .h3Row,
+.navbar,
+.navbar-default {
+  background-color: #4285f4;
+  color: #fff;
+}
+
+.list thead {
+  background-color: #f1f3f4;
+}
+
+.example-twitter + p {
+  font: 14px 'Roboto', Arial, sans-serif;
+}
+
+.example-number {
+  font: 140px/200px 'Roboto', Arial, sans-serif;
+}
