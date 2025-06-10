@@ -71,7 +71,7 @@ $gray:                   lighten($gray-base, 33.5%) !default; // $color-8
 $gray-light:             lighten($gray-base, 46.7%) !default; // $color-19
 $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
-$brand-primary:         $color-81 !default; // $color-4
+$brand-primary:         $google-blue !default; // $color-4
 $brand-success:         $color-10 !default;
 $brand-info:            $color-35 !default;
 $brand-warning:         $color-47 !default;
@@ -104,7 +104,7 @@ $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 
-$font-family-base:        'Lato', Lato, Arial, sans-serif !default;
+$font-family-base:        'Roboto', Arial, sans-serif !default;
 
 $font-size-base:          14px !default;
 $font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
@@ -429,7 +429,7 @@ $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2
 $navbar-collapse-max-height:       340px !default;
 
 $navbar-default-color:             $color-19 !default;
-$navbar-default-bg:                $color-52 !default;
+$navbar-default-bg:                $google-blue !default;
 $navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
 
 // Navbar links
@@ -1112,7 +1112,7 @@ $confirm-opt-in-tick-color-in-confirmed: $color-16;
 
 // List View
 $list-view-toolbar-bg: $color-87;
-$list-view-header-bg: $color-81;
+$list-view-header-bg: $google-grey;
 $list-view-header-action-btn-hover-bg: $color-87;
 $list-view-header-color: $color-80;
 $list-view-pagination-color: $color-81;
