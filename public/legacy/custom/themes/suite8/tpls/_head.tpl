@@ -75,10 +75,13 @@
     </script>
     {/literal}
     {$SUGAR_CSS}
-    
-    <link rel="stylesheet" href="custom/themes/suite8/css/material-theme.css"/>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="themes/suite8/css/colourSelector.php">
     <script type="text/javascript" src='{sugar_getjspath file="themes/suite8/js/jscolor.js"}'></script>
     <script type="text/javascript" src='{sugar_getjspath file="cache/include/javascript/sugar_field_grp.js"}'></script>
     <script type="text/javascript" src='{sugar_getjspath file="vendor/tinymce/tinymce/tinymce.min.js"}'></script>
+    <link rel="stylesheet" href="custom/themes/suite8/css/material-theme.css"/>
 </head>
