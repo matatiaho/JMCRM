@@ -75,6 +75,7 @@
     </script>
     {/literal}
     {$SUGAR_CSS}
+    
     <link rel="stylesheet" href="public/legacy/custom/themes/suite8/css/material-theme.css"/>
     <link rel="stylesheet" type="text/css" href="themes/suite8/css/colourSelector.php">
     <script type="text/javascript" src='{sugar_getjspath file="themes/suite8/js/jscolor.js"}'></script>
