@@ -22,7 +22,8 @@ Find out more about SuiteCRM 8 and checkout the online demo [here](https://suite
 
 ### Material Theme Overrides ###
 
-To preview a Material-inspired look without rebuilding the SCSS, include `material-theme.css` after the compiled styles in `public/dist/index.html`.
+Material styling is provided by `public/legacy/custom/themes/suite8/css/material-theme.css`.
+The file is referenced from the Suite8 theme so the overrides remain upgrade-safe.
 
 ### Getting Started ###
 
