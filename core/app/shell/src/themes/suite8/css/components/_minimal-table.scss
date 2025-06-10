@@ -181,7 +181,7 @@
   .pagination-button {
     border: none;
     margin: 0 0.1em;
-    border-radius: .2em;
+    border-radius: $button-radius;
 
     .pagination-icons {
       fill: $main;

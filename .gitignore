@@ -1,3 +1,4 @@
 # ignore Hostinger internals
 .cagefs/
 domains/
+docs/material_palette.png

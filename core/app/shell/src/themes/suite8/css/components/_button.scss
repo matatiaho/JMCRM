@@ -31,14 +31,21 @@ button {
   margin: 0.2em;
   background-color: $salmon-pink;
   border: none;
-  -webkit-border-radius: 0.25em;
-  -moz-border-radius: 0.25em;
-  border-radius: 0.25em;
+  -webkit-border-radius: $button-radius;
+  -moz-border-radius: $button-radius;
+  border-radius: $button-radius;
   color: $off-white;
   font-size: 0.9em;
   font-weight: 600;
   letter-spacing: 0.05em;
   display: inline-block;
+  box-shadow: $elevation-1;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px lighten($primary, 35%);
 }
 
 .login-button {
@@ -52,14 +59,15 @@ button {
 
 .login-button:hover {
   background-color: $light-orange;
+  box-shadow: $elevation-2;
 }
 
 .alerts-button,
 .quickcreate-button,
 .favourites-button {
-  -webkit-border-radius: 0.25em;
-  -moz-border-radius: 0.25em;
-  border-radius: 0.25em;
+  -webkit-border-radius: $button-radius;
+  -moz-border-radius: $button-radius;
+  border-radius: $button-radius;
   border: none;
   margin: 0.2em 0.2em 0 0.2em;
   padding: 0.1em 0.8em;
@@ -70,9 +78,9 @@ button {
   .alerts-button,
   .quickcreate-button,
   .favourites-button {
-    -webkit-border-radius: 0.25em;
-    -moz-border-radius: 0.25em;
-    border-radius: 0.25em;
+    -webkit-border-radius: $button-radius;
+    -moz-border-radius: $button-radius;
+    border-radius: $button-radius;
     border: none;
     margin: 0.2em 0.2em 0 0.2em;
     padding: 0.185em 0.7em;
@@ -96,6 +104,7 @@ button {
 
 .alerts-button:active, .alerts-button:hover {
   background-color: $burnt-orange;
+  box-shadow: $elevation-2;
 }
 
 .quickcreate-button {
@@ -105,6 +114,7 @@ button {
 
 .quickcreate-button:active, .quickcreate-button:hover {
   background-color: $bright-purple;
+  box-shadow: $elevation-2;
 }
 
 .favourites-button {
@@ -113,6 +123,7 @@ button {
 
 .favourites-button:active, .favourites-button:hover {
   background-color: $sandy-yellow;
+  box-shadow: $elevation-2;
 }
 
 .alerts-button.disabled, .quickcreate-button.disabled, .favourites-button.disabled {
@@ -156,6 +167,7 @@ button {
 
 .action-button:hover {
   background-color: $astral-blue;
+  box-shadow: $elevation-2;
 }
 
 .clear-filter-button,
@@ -247,9 +259,9 @@ button {
   background-color: Transparent;
   background-repeat: no-repeat;
   border: 0.09em solid $light-grey;
-  -webkit-border-radius: 0.15em;
-  -moz-border-radius: 0.15em;
-  border-radius: 0.15em;
+  -webkit-border-radius: $button-radius;
+  -moz-border-radius: $button-radius;
+  border-radius: $button-radius;
   cursor: pointer;
   overflow: hidden;
   outline: none;
@@ -275,9 +287,9 @@ button {
   background-color: Transparent;
   background-repeat: no-repeat;
   border: 0.09em solid $light-grey;
-  -webkit-border-radius: 0.15em;
-  -moz-border-radius: 0.15em;
-  border-radius: 0.15em;
+  -webkit-border-radius: $button-radius;
+  -moz-border-radius: $button-radius;
+  border-radius: $button-radius;
   cursor: pointer;
   overflow: hidden;
   outline: none;
@@ -324,9 +336,9 @@ button {
   background-color: transparent;
   border: 0.1em solid $sky-blue;
   color: $sky-blue;
-  -webkit-border-radius: 0.25em;
-  -moz-border-radius: 0.25em;
-  border-radius: 0.25em;
+  -webkit-border-radius: $button-radius;
+  -moz-border-radius: $button-radius;
+  border-radius: $button-radius;
   margin: 0.2em 0.2em 0 0.2em;
   padding: 0.1em 0.8em;
   line-height: 1.9em;
@@ -343,9 +355,9 @@ button {
   padding: 0.3rem 1rem;
   font-size: 0.8em;
   font-weight: bold;
-  -webkit-border-radius: 0.2em;
-  -moz-border-radius: 0.2em;
-  border-radius: 0.2em;
+  -webkit-border-radius: $button-radius;
+  -moz-border-radius: $button-radius;
+  border-radius: $button-radius;
 }
 
 .modal-button-cancel {
@@ -355,9 +367,9 @@ button {
   padding: 0.3rem 1rem;
   font-size: 0.8em;
   font-weight: bold;
-  -webkit-border-radius: 0.2em;
-  -moz-border-radius: 0.2em;
-  border-radius: 0.2em;
+  -webkit-border-radius: $button-radius;
+  -moz-border-radius: $button-radius;
+  border-radius: $button-radius;
 }
 
 .modal-button-save:hover, .modal-button-cancel:hover {

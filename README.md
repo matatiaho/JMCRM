@@ -24,7 +24,6 @@ Find out more about SuiteCRM 8 and checkout the online demo [here](https://suite
 
 To preview a Material-inspired look without rebuilding the SCSS, include `material-theme.css` after the compiled styles in `public/dist/index.html`.
 
-
 ### Getting Started ###
 
 Visit the [Administration Guide](https://docs.suitecrm.com/8.x/admin/) for details on getting started, system compatibility and installing SuiteCRM 8
