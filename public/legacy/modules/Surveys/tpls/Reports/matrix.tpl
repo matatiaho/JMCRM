@@ -26,7 +26,7 @@
               title: '{/literal}{$question.name} - {$response.label}{literal}',
               textSize: 10,
               titleSize: 16,
-              titleFont: 'Lato',
+              titleFont: 'Roboto',
               titleY: 10,
               textAngle: 30,
               colorsSequential: true,

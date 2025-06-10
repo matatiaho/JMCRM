@@ -25,7 +25,7 @@
           textSize: 10,
           textAngle: 40,
           titleSize: 16,
-          titleFont: 'Lato',
+          titleFont: 'Roboto',
           titleY: 10,
           colors: ['#f08377', '#534d64', '#778591', '#bfcad3', '#d8f5ee'],
           gutterBottom: 110,
