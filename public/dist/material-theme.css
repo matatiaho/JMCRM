@@ -110,3 +110,47 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/* Dashboard styling to align with Google Material theme */
+#dashboard ul.nav-dashboard li a {
+  color: var(--google-dark-gray);
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+}
+
+#dashboard ul.nav-dashboard li.active a {
+  background-color: var(--google-blue);
+  color: #fff;
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
+#dashboard #tab-actions > a.dropdown-toggle,
+.content #tab-actions > a.dropdown-toggle {
+  background-color: var(--google-blue);
+  color: #fff;
+  border-radius: 0.25rem;
+  padding: 0.375rem 1rem;
+}
+
+#pageContainer .dashletcontainer .pagination td,
+.list .pagination td table td {
+  padding: 0.25rem 0.5rem;
+}
+
+.dashletNonTable input[type=submit] {
+  background-color: var(--google-blue);
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem;
+}
+
+.dashletNonTable {
+  margin-top: 1rem;
+}
+
+.search-bar .input-group {
+  border: 1px solid #dadce0;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 3px rgba(60,64,67,0.15);
+}
