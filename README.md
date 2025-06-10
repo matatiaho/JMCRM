@@ -20,6 +20,11 @@ Our vision is to be the most adopted open source enterprise CRM in the world, gi
 
 Find out more about SuiteCRM 8 and checkout the online demo [here](https://suitecrm.com/suitecrm8/)
 
+### Material Design Palette ###
+
+Below is a preview of the Material color palette used in the theme.
+Run `python docs/material_palette.py` to generate `docs/material_palette.png`.
+
 ### Getting Started ###
 
 Visit the [Administration Guide](https://docs.suitecrm.com/8.x/admin/) for details on getting started, system compatibility and installing SuiteCRM 8
