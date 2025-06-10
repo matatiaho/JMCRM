@@ -1,0 +1,7 @@
+Tue Jun 10 2025 at 04:59:17 [2079769][1][FATAL] IP Address mismatch: SESSION IP: 2603:8001:7103:bc67:918d:b93e:afc1:cab1 CLIENT IP: 2603:8001:7103:bc67:350c:6e34:b2fa:94b4
+Tue Jun 10 2025 at 05:02:08 [2353056][1][FATAL] log call at: modules/EmailMan/tpls/config.tpl - styleChecked is not set
+Tue Jun 10 2025 at 05:02:12 [2353056][1][FATAL] log call at: modules/EmailMan/tpls/config.tpl - styleChecked is not set
+Tue Jun 10 2025 at 05:04:22 [2593838][1][FATAL] SugarPHPMailer encountered an error: SMTP Error: Could not authenticate.
+Tue Jun 10 2025 at 05:04:22 [2593838][1][FATAL] SugarPHPMailer encountered an error: SMTP Error: Could not authenticate.
+Tue Jun 10 2025 at 05:09:23 [3102543][1][FATAL] IP Address mismatch: SESSION IP: 2603:8001:7103:bc67:918d:b93e:afc1:cab1 CLIENT IP: 2603:8001:7103:bc67:350c:6e34:b2fa:94b4
+Tue Jun 10 2025 at 05:50:17 [3117736][1][FATAL] IP Address mismatch: SESSION IP: 2603:8001:7103:bc67:918d:b93e:afc1:cab1 CLIENT IP: 2603:8001:7103:bc67:350c:6e34:b2fa:94b4
