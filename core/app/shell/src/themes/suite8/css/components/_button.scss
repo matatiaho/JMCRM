@@ -31,9 +31,9 @@ button {
   margin: 0.2em;
   background-color: $salmon-pink;
   border: none;
-  -webkit-border-radius: 0.25em;
-  -moz-border-radius: 0.25em;
-  border-radius: 0.25em;
+  -webkit-border-radius: $button-radius;
+  -moz-border-radius: $button-radius;
+  border-radius: $button-radius;
   color: $off-white;
   font-size: 0.9em;
   font-weight: 600;
@@ -57,9 +57,9 @@ button {
 .alerts-button,
 .quickcreate-button,
 .favourites-button {
-  -webkit-border-radius: 0.25em;
-  -moz-border-radius: 0.25em;
-  border-radius: 0.25em;
+  -webkit-border-radius: $button-radius;
+  -moz-border-radius: $button-radius;
+  border-radius: $button-radius;
   border: none;
   margin: 0.2em 0.2em 0 0.2em;
   padding: 0.1em 0.8em;
@@ -70,9 +70,9 @@ button {
   .alerts-button,
   .quickcreate-button,
   .favourites-button {
-    -webkit-border-radius: 0.25em;
-    -moz-border-radius: 0.25em;
-    border-radius: 0.25em;
+    -webkit-border-radius: $button-radius;
+    -moz-border-radius: $button-radius;
+    border-radius: $button-radius;
     border: none;
     margin: 0.2em 0.2em 0 0.2em;
     padding: 0.185em 0.7em;
@@ -247,9 +247,9 @@ button {
   background-color: Transparent;
   background-repeat: no-repeat;
   border: 0.09em solid $light-grey;
-  -webkit-border-radius: 0.15em;
-  -moz-border-radius: 0.15em;
-  border-radius: 0.15em;
+  -webkit-border-radius: $button-radius;
+  -moz-border-radius: $button-radius;
+  border-radius: $button-radius;
   cursor: pointer;
   overflow: hidden;
   outline: none;
@@ -275,9 +275,9 @@ button {
   background-color: Transparent;
   background-repeat: no-repeat;
   border: 0.09em solid $light-grey;
-  -webkit-border-radius: 0.15em;
-  -moz-border-radius: 0.15em;
-  border-radius: 0.15em;
+  -webkit-border-radius: $button-radius;
+  -moz-border-radius: $button-radius;
+  border-radius: $button-radius;
   cursor: pointer;
   overflow: hidden;
   outline: none;
@@ -324,9 +324,9 @@ button {
   background-color: transparent;
   border: 0.1em solid $sky-blue;
   color: $sky-blue;
-  -webkit-border-radius: 0.25em;
-  -moz-border-radius: 0.25em;
-  border-radius: 0.25em;
+  -webkit-border-radius: $button-radius;
+  -moz-border-radius: $button-radius;
+  border-radius: $button-radius;
   margin: 0.2em 0.2em 0 0.2em;
   padding: 0.1em 0.8em;
   line-height: 1.9em;
@@ -343,9 +343,9 @@ button {
   padding: 0.3rem 1rem;
   font-size: 0.8em;
   font-weight: bold;
-  -webkit-border-radius: 0.2em;
-  -moz-border-radius: 0.2em;
-  border-radius: 0.2em;
+  -webkit-border-radius: $button-radius;
+  -moz-border-radius: $button-radius;
+  border-radius: $button-radius;
 }
 
 .modal-button-cancel {
@@ -355,9 +355,9 @@ button {
   padding: 0.3rem 1rem;
   font-size: 0.8em;
   font-weight: bold;
-  -webkit-border-radius: 0.2em;
-  -moz-border-radius: 0.2em;
-  border-radius: 0.2em;
+  -webkit-border-radius: $button-radius;
+  -moz-border-radius: $button-radius;
+  border-radius: $button-radius;
 }
 
 .modal-button-save:hover, .modal-button-cancel:hover {
