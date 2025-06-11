@@ -1,0 +1,8 @@
+{% extends '@Theme/layout.html.twig' %}
+
+{# Add our CSS after the core styles #}
+{% block head_additional %}
+    {{ parent() }}
+    <link rel="stylesheet"
+          href="{{ asset('custom/themes/suite8/css/styles.css') }}">
+{% endblock %}
