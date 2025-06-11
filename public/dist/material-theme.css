@@ -155,6 +155,8 @@ a:hover {
   box-shadow: 0 1px 3px rgba(60,64,67,0.15);
 }
 
-.nav-item.active .home-nav-link svg {
-  fill: #fff;
+.nav-item.active .home-nav-link svg,
+.nav-item.active .nav-link-nongrouped svg,
+.nav-item.active .nav-link-grouped svg {
+  fill: #fff !important;
 }
