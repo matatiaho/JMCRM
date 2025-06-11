@@ -154,3 +154,7 @@ a:hover {
   border-radius: 0.25rem;
   box-shadow: 0 1px 3px rgba(60,64,67,0.15);
 }
+
+.nav-item.active .home-nav-link svg {
+  fill: #fff;
+}
