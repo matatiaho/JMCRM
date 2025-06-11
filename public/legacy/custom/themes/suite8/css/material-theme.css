@@ -297,3 +297,7 @@ td {
 .nav-item.active .home-nav-link svg {
   fill: --google-blue !important;
 }
+
+.dashletNonTable {
+  background: var(--google-gray-dark);
+}
