@@ -295,5 +295,5 @@ td {
 }
 
 .nav-item.active .home-nav-link svg {
-  fill: --google-blue;
+  fill: --google-blue !important;
 }
