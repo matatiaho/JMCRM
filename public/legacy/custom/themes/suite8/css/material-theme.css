@@ -354,3 +354,11 @@ td {
 g[Attributes Style] {
     fill: var(--google-blue);
 }
+
+#pageContainer .dashletcontainer .pagination td {
+    background-color: var(--google-gray-dark);
+}
+
+.list thead {
+    background-color: #e8eaed !important;
+}
