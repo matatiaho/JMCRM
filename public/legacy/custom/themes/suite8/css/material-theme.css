@@ -311,3 +311,7 @@ td {
     color: var(--google-blue) !important;
     border-top: .2em solid var(--google-blue);
 }
+
+.navbar .nav-link:hover {
+  fill: var(--google-blue)
+}
