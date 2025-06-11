@@ -312,11 +312,16 @@ td {
     border-top: .2em solid var(--google-blue);
 }
 
-.navbar .nav-link:hover {
-  fill: var(--google-blue);
-  background: var(--google-blue);
+.dropdown-menu .nav-item:hover, .dropdown-menu .nav-item .action-link:hover {
+    background-color: var(--google-blue);
+}
+
+@media (min-width: 62em) {
+    .nav-link:hover svg, .nav-link:hover svg *, .home-nav-link:hover svg {
+        fill: var(--google-blue);
+    }
 }
 
 .dropdown-menu .nav-item:hover, .dropdown-menu .nav-item .action-link:hover {
-    background-color: var(--google-blue);
+  background-color: var(--google-blue)
 }
