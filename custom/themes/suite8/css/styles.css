@@ -123,11 +123,15 @@ a:hover {
   margin-left: auto;
 }
 
-/* Tables inside dashlets */
-.dashletPanel table thead,
-.dashlet table thead {
-  background: var(--google-gray);
-  color: var(--google-text);
+/* Tables inside dashlets – enhanced contrast */
+.dashletPanel table thead th,
+.dashlet table thead th,
+.widgetPanel table thead th,
+.widget-container table thead th {
+  background: #e8eaed !important;   /* slightly darker gray for readability */
+  color: var(--google-text) !important;
+  font-weight: 500;
+  padding: .5rem .75rem;
 }
 
 .dashletPanel table tbody tr:nth-child(even),
@@ -258,7 +262,6 @@ td {
 
 /* -------------------------------------------------- */
 /* Responsive tweaks                                   */
-/* -------------------------------------------------- */
 @media (max-width: 576px) {
   .dashletPanelMenuBar,
   .dashlet .dashlet-header,
@@ -272,13 +275,16 @@ td {
   }
 }
 
-/* Entire header row cells go Google-blue */
+/* -------------------------------------------------- */
+/* Classic dashlet full-width header patch            */
+/* -------------------------------------------------- */
+/* Ensure the entire table header cells adopt Google blue */
 .dashletPanelMenuBar td {
   background: var(--google-blue) !important;
   color: #fff !important;
 }
 
-/* Toolbar icons pushed to far right cell */
+/* Push the toolbar icons to the rightmost cell */
 .dashletPanelMenuBar td:last-child .dashlet-toolbar {
   margin-left: auto;
 }
