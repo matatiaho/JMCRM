@@ -158,5 +158,5 @@ a:hover {
 .nav-item.active .home-nav-link svg,
 .nav-item.active .nav-link-nongrouped svg,
 .nav-item.active .nav-link-grouped svg {
-  fill: #fff;
+  fill: #fff !important;
 }
