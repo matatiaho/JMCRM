@@ -271,3 +271,14 @@ td {
     font-size: .85rem;
   }
 }
+
+/* Entire header row cells go Google-blue */
+.dashletPanelMenuBar td {
+  background: var(--google-blue) !important;
+  color: #fff !important;
+}
+
+/* Toolbar icons pushed to far right cell */
+.dashletPanelMenuBar td:last-child .dashlet-toolbar {
+  margin-left: auto;
+}
