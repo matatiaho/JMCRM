@@ -93,7 +93,6 @@ a:hover {
   color: #fff !important;
   font-weight: 500;
   padding: .5rem .75rem;
-  border-bottom: 1px solid var(--google-border);
   display: flex;
   align-items: center;
   width: 100%;
@@ -108,7 +107,7 @@ a:hover {
 .widget-header h3,
 .widget-header span,
 .widgetPanel .card-header h3 {
-  font-size: .95rem;
+  font-size: 1em;
   margin: 0;
   flex: 1 1 auto;
   padding-left: .25rem;
@@ -242,7 +241,6 @@ td {
 .panel-card .card-header {
   background: #fff;
   color: var(--google-text);
-  border-bottom: 1px solid var(--google-border);
 }
 
 /* -------------------------------------------------- */
