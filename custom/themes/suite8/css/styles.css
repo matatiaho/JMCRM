@@ -290,5 +290,5 @@ td {
 }
 
 .list tr th a:link {
-  color: var(--google-text);
+  color: var(--google-text) !important;
 }
