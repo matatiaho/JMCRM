@@ -362,3 +362,12 @@ g[Attributes Style] {
 .list thead {
     background-color: #e8eaed !important;
 }
+
+.dashletPanel, .widgetPanel, .widget-container {
+  border-radius: 15px;
+  border: none;
+}
+
+#pageContainer .dashletcontainer .hd {
+  border-radius: 3px;
+}
