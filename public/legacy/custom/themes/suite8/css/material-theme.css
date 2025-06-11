@@ -6,13 +6,13 @@
 /* Root palette                                       */
 /* -------------------------------------------------- */
 :root {
-  --google-blue: #1a73e8;
-  --google-blue-dark: #1669c1;
+  --google-gray-dark: #1a73e8;
+  --google-gray-dark-dark: #1669c1;
   --google-red: #d93025;
   --google-yellow: #f9ab00;
   --google-green: #34a853;
   --google-gray: #f1f3f4;
-  --google-gray-dark: #5f6368;
+  --google-gray-dark: #313131;
   --google-text: #202124;
   --google-border: #dadce0;
   --elev-1: 0 1px 3px rgba(60,64,67,.15), 0 4px 8px rgba(60,64,67,.10);
@@ -30,7 +30,7 @@ body {
 }
 
 a {
-  color: var(--google-blue);
+  color: var(--google-gray-dark);
   text-decoration: none;
 }
 
@@ -43,7 +43,7 @@ a:hover {
 /* -------------------------------------------------- */
 .navbar,
 .navbar-default {
-  background: var(--google-blue) !important;
+  background: var(--google-gray-dark) !important;
   color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
 }
@@ -89,7 +89,7 @@ a:hover {
 .dashlet .dashlet-title,
 .widget-header,
 .widgetPanel .card-header {
-  background: var(--google-blue) !important;
+  background: var(--google-gray-dark) !important;
   color: #fff !important;
   font-weight: 500;
   padding: .5rem .75rem;
@@ -140,7 +140,7 @@ a:hover {
 
 .dashletPanel table tbody tr:nth-child(odd),
 .dashlet table tbody tr:nth-child(odd) {
-  background: var(--google-blue);
+  background: var(--google-gray-dark);
 }
 
 /* Pagination / footer inside dashlet */
@@ -168,21 +168,21 @@ button:hover,
 .btn-primary,
 .action-button,
 .quickcreate-button {
-  background: var(--google-blue);
-  border-color: var(--google-blue);
+  background: var(--google-gray-dark);
+  border-color: var(--google-gray-dark);
   color: #fff;
 }
 
 .btn-primary:hover,
 .action-button:hover,
 .quickcreate-button:hover {
-  background: var(--google-blue-dark);
-  border-color: var(--google-blue-dark);
+  background: var(--google-gray-dark-dark);
+  border-color: var(--google-gray-dark-dark);
 }
 
 .btn-outline-primary {
-  border-color: var(--google-blue);
-  color: var(--google-blue);
+  border-color: var(--google-gray-dark);
+  color: var(--google-gray-dark);
 }
 
 .btn-outline-primary:hover {
@@ -210,7 +210,7 @@ button:hover,
 }
 
 .sidebar-container li a:hover {
-  background: var(--google-blue);
+  background: var(--google-gray-dark);
 }
 
 /* -------------------------------------------------- */
@@ -275,7 +275,7 @@ td {
 /* -------------------------------------------------- */
 /* Ensure the entire table header cells adopt Google blue */
 .dashletPanelMenuBar td {
-  background: var(--google-blue) !important;
+  background: var(--google-gray-dark) !important;
   color: #fff !important;
 }
 
