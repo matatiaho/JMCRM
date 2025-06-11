@@ -316,3 +316,7 @@ td {
   fill: var(--google-blue);
   background: var(--google-blue);
 }
+
+.dropdown-menu .nav-item:hover, .dropdown-menu .nav-item .action-link:hover {
+    background-color: var(--google-blue);
+}
