@@ -346,3 +346,11 @@ td {
         fill: var(--google-blue);
     }
 }
+
+.dashletcontainer .dashletPanel .header-title {
+  color: var(--google-text)
+}
+
+g[Attributes Style] {
+    fill: var(--google-blue);
+}
