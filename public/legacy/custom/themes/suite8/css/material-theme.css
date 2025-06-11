@@ -197,7 +197,6 @@ button:hover,
 .sidebar-container {
   background: #fff;
   color: var(--google-text);
-  border-right: 1px solid var(--google-border);
 }
 
 .p-sidebar-header,
@@ -212,7 +211,7 @@ button:hover,
 }
 
 .sidebar-container li a:hover {
-  background: var(--google-gray);
+  background: var(--google-blue);
 }
 
 /* -------------------------------------------------- */
@@ -221,12 +220,10 @@ button:hover,
 th {
   color: var(--google-text);
   font-weight: 500;
-  border-bottom: 1px solid var(--google-border);
 }
 
 td {
   color: var(--google-text);
-  border-top: 1px solid var(--google-border);
 }
 
 /* -------------------------------------------------- */
