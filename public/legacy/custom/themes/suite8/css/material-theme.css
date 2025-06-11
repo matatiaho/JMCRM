@@ -293,3 +293,7 @@ td {
   color: var(--google-text) !important;
   text-decoration: none;
 }
+
+.nav-item.active .home-nav-link svg {
+  fill: --google-blue;
+}
