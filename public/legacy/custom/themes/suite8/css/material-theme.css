@@ -141,7 +141,7 @@ a:hover {
 
 .dashletPanel table tbody tr:nth-child(odd),
 .dashlet table tbody tr:nth-child(odd) {
-  background: var(--google-gray);
+  background: var(--google-blue);
 }
 
 /* Pagination / footer inside dashlet */
