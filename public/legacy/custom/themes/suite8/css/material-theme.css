@@ -301,3 +301,8 @@ td {
 .dashletNonTable {
   background: var(--google-gray-dark);
 }
+
+.post_txt_username {
+    color: #fff;
+    font-size: 16px;
+}
