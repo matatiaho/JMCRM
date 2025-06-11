@@ -288,3 +288,7 @@ td {
 .dashletPanelMenuBar td:last-child .dashlet-toolbar {
   margin-left: auto;
 }
+
+.list tr th a:link {
+  color: var(--google-text);
+}
