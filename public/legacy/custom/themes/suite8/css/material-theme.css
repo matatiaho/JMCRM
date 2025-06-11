@@ -1,4 +1,4 @@
-/* Google Material design overrides for SuiteCRM – v2 (only existing selectors) */
+/* Google Material design overrides for SuiteCRM – v3 (targeting real SuiteCRM selectors) */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 /* -------------------------------------------------- */
@@ -40,9 +40,18 @@ a:hover{text-decoration:underline}
   box-shadow:0 2px 4px rgba(0,0,0,.15);
 }
 
+.navbar a,
 .navbar .nav-link,
-.navbar-nav .nav-link{color:#fff!important;font-weight:500}
-.navbar .nav-link:hover{background:rgba(255,255,255,.08)}
+.navbar-default .navbar-nav > li > a{
+  color:#fff!important;
+  font-weight:500;
+}
+
+.navbar a:hover,
+.navbar .nav-link:hover,
+.navbar-default .navbar-nav > li > a:hover{
+  background:rgba(255,255,255,.08);
+}
 
 .search-bar .input-group{
   border:1px solid var(--google-border);
@@ -51,8 +60,9 @@ a:hover{text-decoration:underline}
 }
 
 /* -------------------------------------------------- */
-/* Dashlets                                           */
+/* Dashlets / Home page modules                        */
 /* -------------------------------------------------- */
+/* Outer shell */
 .dashletPanel{
   background:#fff;
   border:1px solid var(--google-border);
@@ -61,23 +71,44 @@ a:hover{text-decoration:underline}
   margin-bottom:1.25rem;
 }
 
-.dashletPanel .h3Row{
-  background:var(--google-blue);
-  color:#fff;
+/* Header bar - SuiteCRM uses .dashletPanelMenuBar (v7) or .hd (v8) */
+.dashletPanelMenuBar,
+.dashletPanel .hd,
+.dashlet .header,
+.dashlet .dashlet-header,
+.dashlet .dashlet-title{
+  background:var(--google-blue)!important;
+  color:#fff!important;
   font-weight:500;
   padding:.5rem .75rem;
   border-bottom:1px solid var(--google-border);
+  display:flex;
+  align-items:center;
 }
 
-.dashletPanel table thead{
+/* Title text */
+.dashletPanelMenuBar h3,
+.dashlet .dashlet-title h3,
+.dashletPanel .hd h3,
+.dashletPanel .hd span{
+  font-size:.95rem;
+  margin:0;
+}
+
+/* Table inside dashlet */
+.dashletPanel table thead,
+.dashlet table thead{
   background:var(--google-gray);
   color:var(--google-text);
 }
 
-.dashletPanel table tbody tr:nth-child(even){background:#fff}
-.dashletPanel table tbody tr:nth-child(odd){background:var(--google-gray)}
+.dashletPanel table tbody tr:nth-child(even),
+.dashlet table tbody tr:nth-child(even){background:#fff}
+.dashletPanel table tbody tr:nth-child(odd),
+.dashlet table tbody tr:nth-child(odd){background:var(--google-gray)}
 
-#pageContainer .dashletcontainer .pagination td,
+/* Pagination/footer inside dashlet */
+.dashletcontainer .pagination td,
 .list .pagination td table td{
   padding:.25rem .5rem;
   font-size:.85rem;
@@ -128,14 +159,14 @@ button:hover,
 .sidebar-container li a:hover{background:var(--google-gray)}
 
 /* -------------------------------------------------- */
-/* Tables                                             */
+/* Tables (generic)                                   */
 /* -------------------------------------------------- */
 th{color:var(--google-text);font-weight:500;border-bottom:1px solid var(--google-border)}
 
 td{color:var(--google-text);border-top:1px solid var(--google-border)}
 
 /* -------------------------------------------------- */
-/* Cards / panels                                     */
+/* Generic cards / panels                             */
 /* -------------------------------------------------- */
 .card,
 .panel,
@@ -163,5 +194,8 @@ td{color:var(--google-text);border-top:1px solid var(--google-border)}
 /* Responsive                                         */
 /* -------------------------------------------------- */
 @media(max-width:576px){
-  .dashletPanel .h3Row{font-size:.9rem}
+  .dashletPanelMenuBar,
+  .dashlet .dashlet-header{padding:.4rem .6rem}
+  .dashletPanelMenuBar h3,
+  .dashlet .dashlet-title h3{font-size:.85rem}
 }
