@@ -340,3 +340,9 @@ td {
     fill: var(--google-blue);
   }
 }
+
+@media only screen and (min-width: 62em) {
+    .navbar .navbar-action-group .action-link:hover svg, .navbar .navbar-action-group .action-link:hover svg path, .navbar .navbar-action-group .action-link:hover svg polygon {
+        fill: var(--google-blue);
+    }
+}
