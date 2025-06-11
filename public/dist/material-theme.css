@@ -313,5 +313,6 @@ td {
 }
 
 .navbar .nav-link:hover {
-  fill: var(--google-blue)
+  fill: var(--google-blue);
+  background: var(--google-blue);
 }
