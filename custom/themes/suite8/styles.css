@@ -1,0 +1,260 @@
+/* Google Material Design overrides for SuiteCRM 8.x – v4
+   Targets existing selectors only, no HTML changes needed */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+/* -------------------------------------------------- */
+/* Root palette                                       */
+/* -------------------------------------------------- */
+:root {
+  --google-blue: #1a73e8;
+  --google-blue-dark: #1669c1;
+  --google-red: #d93025;
+  --google-yellow: #f9ab00;
+  --google-green: #34a853;
+  --google-gray: #f1f3f4;
+  --google-gray-dark: #5f6368;
+  --google-text: #202124;
+  --google-border: #dadce0;
+  --elev-1: 0 1px 3px rgba(60,64,67,.15), 0 4px 8px rgba(60,64,67,.10);
+}
+
+/* -------------------------------------------------- */
+/* Global                                             */
+/* -------------------------------------------------- */
+html,
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background: var(--google-gray);
+  color: var(--google-text);
+  line-height: 1.5;
+}
+
+a {
+  color: var(--google-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* -------------------------------------------------- */
+/* Top navigation bar                                 */
+/* -------------------------------------------------- */
+.navbar,
+.navbar-default {
+  background: var(--google-blue) !important;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+}
+
+.navbar a,
+.navbar .nav-link,
+.navbar-default .navbar-nav > li > a {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+.navbar a:hover,
+.navbar .nav-link:hover,
+.navbar-default .navbar-nav > li > a:hover {
+  background: rgba(255, 255, 255, .08);
+}
+
+.search-bar .input-group {
+  border: 1px solid var(--google-border);
+  border-radius: 4px;
+  background: #fff;
+}
+
+/* -------------------------------------------------- */
+/* Dashlets / Home‑page modules                       */
+/* -------------------------------------------------- */
+/* Outer shell */
+.dashletPanel,
+.widgetPanel,
+.widget-container {
+  background: #fff;
+  border: 1px solid var(--google-border);
+  border-radius: 8px;
+  box-shadow: var(--elev-1);
+  margin-bottom: 1.25rem;
+}
+
+/* Header bar – classic (legacy) & angular widgets */
+.dashletPanelMenuBar,
+.dashletPanel .hd,
+.dashlet .header,
+.dashlet .dashlet-header,
+.dashlet .dashlet-title,
+.widget-header,
+.widgetPanel .card-header {
+  background: var(--google-blue) !important;
+  color: #fff !important;
+  font-weight: 500;
+  padding: .5rem .75rem;
+  border-bottom: 1px solid var(--google-border);
+  display: flex;
+  align-items: center;
+}
+
+/* Title text */
+.dashletPanelMenuBar h3,
+.dashlet .dashlet-title h3,
+.dashletPanel .hd h3,
+.dashletPanel .hd span,
+.widget-header h3,
+.widget-header span,
+.widgetPanel .card-header h3 {
+  font-size: .95rem;
+  margin: 0;
+}
+
+/* Tables inside dashlets */
+.dashletPanel table thead,
+.dashlet table thead {
+  background: var(--google-gray);
+  color: var(--google-text);
+}
+
+.dashletPanel table tbody tr:nth-child(even),
+.dashlet table tbody tr:nth-child(even) {
+  background: #fff;
+}
+
+.dashletPanel table tbody tr:nth-child(odd),
+.dashlet table tbody tr:nth-child(odd) {
+  background: var(--google-gray);
+}
+
+/* Pagination / footer inside dashlet */
+.dashletcontainer .pagination td,
+.list .pagination td table td {
+  padding: .25rem .5rem;
+  font-size: .85rem;
+}
+
+/* -------------------------------------------------- */
+/* Buttons                                            */
+/* -------------------------------------------------- */
+button,
+.btn {
+  border-radius: 4px;
+  font-weight: 500;
+  transition: box-shadow .2s, background-color .2s;
+}
+
+button:hover,
+.btn:hover {
+  box-shadow: 0 2px 6px rgba(60, 64, 67, .15);
+}
+
+.btn-primary,
+.action-button,
+.quickcreate-button {
+  background: var(--google-blue);
+  border-color: var(--google-blue);
+  color: #fff;
+}
+
+.btn-primary:hover,
+.action-button:hover,
+.quickcreate-button:hover {
+  background: var(--google-blue-dark);
+  border-color: var(--google-blue-dark);
+}
+
+.btn-outline-primary {
+  border-color: var(--google-blue);
+  color: var(--google-blue);
+}
+
+.btn-outline-primary:hover {
+  background: rgba(26, 115, 232, .1);
+}
+
+/* -------------------------------------------------- */
+/* Sidebar                                            */
+/* -------------------------------------------------- */
+.p-sidebar,
+.sidebar-container {
+  background: #fff;
+  color: var(--google-text);
+  border-right: 1px solid var(--google-border);
+}
+
+.p-sidebar-header,
+.p-sidebar .search-bar .input-group {
+  background: #fff;
+  color: var(--google-text);
+}
+
+.sidebar-container li a {
+  padding: .5rem 1rem;
+  color: var(--google-text);
+}
+
+.sidebar-container li a:hover {
+  background: var(--google-gray);
+}
+
+/* -------------------------------------------------- */
+/* Generic tables                                     */
+/* -------------------------------------------------- */
+th {
+  color: var(--google-text);
+  font-weight: 500;
+  border-bottom: 1px solid var(--google-border);
+}
+
+td {
+  color: var(--google-text);
+  border-top: 1px solid var(--google-border);
+}
+
+/* -------------------------------------------------- */
+/* Generic cards / panels                             */
+/* -------------------------------------------------- */
+.card,
+.panel,
+.panel-card {
+  background: #fff;
+  border: 1px solid var(--google-border);
+  border-radius: 8px;
+  box-shadow: var(--elev-1);
+}
+
+.card-header,
+.panel-card .card-header {
+  background: #fff;
+  color: var(--google-text);
+  border-bottom: 1px solid var(--google-border);
+}
+
+/* -------------------------------------------------- */
+/* Footer                                             */
+/* -------------------------------------------------- */
+.footer {
+  background: var(--google-gray);
+  color: var(--google-gray-dark);
+}
+
+.footer-link {
+  color: var(--google-gray-dark);
+}
+
+/* -------------------------------------------------- */
+/* Responsive tweaks                                   */
+/* -------------------------------------------------- */
+@media (max-width: 576px) {
+  .dashletPanelMenuBar,
+  .dashlet .dashlet-header,
+  .widget-header {
+    padding: .4rem .6rem;
+  }
+  .dashletPanelMenuBar h3,
+  .dashlet .dashlet-title h3,
+  .widget-header h3 {
+    font-size: .85rem;
+  }
+}
