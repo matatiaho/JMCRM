@@ -289,6 +289,12 @@ td {
   margin-left: auto;
 }
 
-.list tr th a:link {
+/* Header link color override */
+.dashletPanel table thead th a,
+.dashlet table thead th a,
+.widgetPanel table thead th a,
+.widget-container table thead th a,
+.list th a {
   color: var(--google-text) !important;
+  text-decoration: none;
 }
