@@ -618,3 +618,18 @@ table.view {
     fill: var(--brand-accent) !important;
   }
 }
+
+/* Icon hover accent for dashlet toolbar & close icons */
+.dashlet-toolbar .action-link:hover svg,
+.dashlet-toolbar .action-link:hover svg path,
+.dashlet-toolbar .action-link:hover svg polygon {
+  fill: var(--brand-accent) !important;
+}
+
+/* Generic nav-link icons spacing */
+.navbar .nav-link svg,
+.navbar .nav-link svg path,
+.navbar .nav-link svg polygon,
+.navbar .home-nav-link svg {
+  margin-right: 6px !important;
+}
