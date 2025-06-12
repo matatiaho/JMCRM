@@ -61,7 +61,6 @@ a:hover {
 .navbar-default .navbar-nav > li > a:hover,
 .navbar .navbar-action-group .action-link:hover {
   background: var(--google-gray-dark) !important;
-  padding: .8em 1em 1em .5em !important;
   color: var(--google-text) !important;
 }
 
@@ -316,21 +315,6 @@ td {
 .list th a {
   color: var(--google-text) !important;
   text-decoration: none;
-}
-
-.nav-item.active .home-nav-link svg,
-.nav-item.active .home-nav-link svg * {
-  fill: var(--google-text) !important;
-}
-
-.nav-item.active .home-nav-link {
-  color: var(--google-blue) !important;
-  border-top: .2em solid var(--google-blue);
-}
-
-.nav-item.active .nav-link-nongrouped, .nav-item.active .nav-link-grouped, .nav-item.active .home-nav-link {
-    color: var(--google-blue) !important;
-    border-top: .2em solid var(--google-blue);
 }
 
 .dropdown-menu .nav-item:hover, .dropdown-menu .nav-item .action-link:hover {
