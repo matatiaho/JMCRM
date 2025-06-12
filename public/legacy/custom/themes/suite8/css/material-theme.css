@@ -155,7 +155,7 @@ a:hover {
 .dashlet table tbody tr:nth-child(odd),
 .widgetPanel table tbody tr:nth-child(odd),
 .widget-container table tbody tr:nth-child(odd) {
-  background: #242424;
+  /* background: #242424; */
 }
 
 /* lighten table body text */
@@ -506,7 +506,7 @@ table.view {
 .dashlet table tbody tr:nth-child(odd),
 .widgetPanel table tbody tr:nth-child(odd),
 .widget-container table tbody tr:nth-child(odd) {
-  background: var(--google-gray-dark) !important;
+  /* background: var(--google-gray-dark) !important; */
 }
 
 /* 4 & 5. Action-icons in navbar */
