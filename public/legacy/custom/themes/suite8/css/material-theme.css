@@ -51,14 +51,16 @@ a:hover {
 .navbar a,
 .navbar .nav-link,
 .navbar-default .navbar-nav > li > a {
-  color: #fff !important;
+  color: var(--google-text) !important;
   font-weight: 500;
 }
 
 .navbar a:hover,
 .navbar .nav-link:hover,
-.navbar-default .navbar-nav > li > a:hover {
-  background: rgba(255, 255, 255, .08);
+.navbar-default .navbar-nav > li > a:hover,
+.navbar .navbar-action-group .action-link:hover {
+  background: var(--google-gray-dark-dark) !important;
+  color: var(--google-text) !important;
 }
 
 .search-bar .input-group {
@@ -442,4 +444,34 @@ button.dashboard-action:hover {
 
 #dashboard #tab-actions ul.dropdown-menu .button:hover {
   background: var(--google-gray-dark-dark);
+}
+
+/* --- Navbar dropdown & hover adjustments (sync with Actions button style) --- */
+.navbar .dropdown-menu {
+  background: var(--google-gray-dark) !important;
+  border: none;
+}
+
+.navbar .dropdown-menu .dropdown-item,
+.navbar .dropdown-menu .nav-link,
+.navbar .dropdown-menu .action-link {
+  color: var(--google-text) !important;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover,
+.navbar .dropdown-menu .nav-link:hover,
+.navbar .dropdown-menu .action-link:hover {
+  background: var(--google-gray-dark-dark) !important;
+  color: var(--google-text) !important;
+}
+
+/* ----------------------------------------------- */
+/* Navbar link & action-icon colours               */
+/* ----------------------------------------------- */
+.navbar .navbar-action-group .action-link {
+  background: var(--google-gray-dark);
+  padding: 6px 10px;
+  border-radius: 4px;
+  color: var(--google-text) !important;
+  transition: background-color .2s ease;
 }
