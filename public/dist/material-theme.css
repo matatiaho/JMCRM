@@ -164,7 +164,6 @@ a:hover {
 .widgetPanel table tbody td,
 .widget-container table tbody td {
   color: var(--google-text);
-  background: var(--google-gray-dark) !important;
 }
 
 /* Pagination / footer inside dashlet */
@@ -640,7 +639,10 @@ ul.nav-dashboard li a.first-tab-xs {
 }
 
 /* Dashlet tweaks */
-.dashletNonTable{background:#222222!important;color:var(--google-text)!important;}
+.dashletNonTable {
+  background: var(--google-gray-dark) !important;
+  color: var(--google-text) !important;
+}
 
 .dashletPanel .hd span{margin-right:8px;}
 
