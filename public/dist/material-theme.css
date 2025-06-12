@@ -318,13 +318,14 @@ td {
   text-decoration: none;
 }
 
-.nav-item.active .home-nav-link svg {
-  fill: var(--google-blue) !important;
-}
-
 .nav-item.active .home-nav-link svg,
 .nav-item.active .home-nav-link svg * {
   fill: var(--google-text) !important;
+}
+
+.nav-item.active .home-nav-link {
+  color: var(--google-blue) !important;
+  border-top: .2em solid var(--google-blue);
 }
 
 .nav-item.active .nav-link-nongrouped, .nav-item.active .nav-link-grouped, .nav-item.active .home-nav-link {
