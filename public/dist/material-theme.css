@@ -16,6 +16,7 @@
   --google-text: #e0e0e0;
   --google-border: #444444;
   --elev-1: 0 1px 3px rgba(0,0,0,.6), 0 4px 8px rgba(0,0,0,.4);
+  --brand-accent: #4b7291;
 }
 
 /* -------------------------------------------------- */
@@ -474,4 +475,42 @@ button.dashboard-action:hover {
   border-radius: 4px;
   color: var(--google-text) !important;
   transition: background-color .2s ease;
+}
+
+/* ------------------------------------------------------------------ */
+/* JMCRM custom overrides                                             */
+/* ------------------------------------------------------------------ */
+/* Hide SuiteCRM logo on login screen */
+.image-company_logo .ng-star-inserted,
+img.image-company_logo,
+img.ng-star-inserted.image-company_logo {
+  display: none !important;
+}
+
+/* Login button primary colour */
+.login-button {
+  background: var(--brand-accent) !important;
+  border-color: var(--brand-accent) !important;
+  color: #fff !important;
+}
+
+.login-button:hover {
+  background: #406381 !important;
+  border-color: #406381 !important;
+}
+
+/* Navbar action icons hover background */
+.navbar .navbar-action-group .action-link:hover {
+  background: var(--brand-accent) !important;
+  color: #fff !important;
+}
+
+/* Dashboard "Actions" dropdown toggle */
+#dashboard #tab-actions > a.dropdown-toggle {
+  background: var(--brand-accent) !important;
+  color: #fff !important;
+}
+
+#dashboard #tab-actions > a.dropdown-toggle:hover {
+  background: #406381 !important;
 }

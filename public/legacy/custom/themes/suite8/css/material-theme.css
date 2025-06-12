@@ -16,6 +16,7 @@
   --google-text: #e0e0e0;
   --google-border: #444444;
   --elev-1: 0 1px 3px rgba(0,0,0,.6), 0 4px 8px rgba(0,0,0,.4);
+  --brand-accent: #4b7291;
 }
 
 /* -------------------------------------------------- */
@@ -59,8 +60,8 @@ a:hover {
 .navbar .nav-link:hover,
 .navbar-default .navbar-nav > li > a:hover,
 .navbar .navbar-action-group .action-link:hover {
-  background: var(--google-gray-dark-dark) !important;
-  color: var(--google-text) !important;
+  background: var(--brand-accent) !important;
+  color: #fff !important;
 }
 
 .search-bar .input-group {
@@ -474,4 +475,36 @@ button.dashboard-action:hover {
   border-radius: 4px;
   color: var(--google-text) !important;
   transition: background-color .2s ease;
+}
+
+/* Hide any lingering SuiteCRM logo images */
+img.image-company_logo,
+img.ng-star-inserted.image-company_logo {
+  display: none !important;
+}
+
+/* Login button primary colour */
+.login-button {
+  background: var(--brand-accent) !important;
+  border-color: var(--brand-accent) !important;
+  color: #fff !important;
+}
+
+.login-button:hover {
+  background: #406381 !important;
+  border-color: #406381 !important;
+}
+
+/* Dashboard Actions dropdown toggle */
+#dashboard #tab-actions > a.dropdown-toggle {
+  background: var(--brand-accent) !important;
+  color: #fff !important;
+}
+
+#dashboard #tab-actions > a.dropdown-toggle:hover {
+  background: #406381 !important;
+}
+
+.image-company_logo .ng-star-inserted {
+  display: none !important;
 }
