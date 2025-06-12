@@ -6,13 +6,16 @@
 /* Root palette                                       */
 /* -------------------------------------------------- */
 :root {
-  --google-blue: #2563eb;              /* primary brand */
-  --google-blue-dark: #1e40af;         /* hover/active  */
-  --google-gray: #f8fafc;              /* page bg       */
-  --google-gray-dark: #1f2937;         /* navbar text   */
-  --google-text: #374151;              /* body text     */
-  --google-border: #e2e8f0;            /* subtle lines  */
-  --elev-1: 0 1px 3px rgba(0,0,0,.06), 0 4px 8px rgba(0,0,0,.04);
+  --google-blue: #2d2d2d;
+  --google-gray-dark-dark: #3a3a3a;
+  --google-red: #d93025;
+  --google-yellow: #f9ab00;
+  --google-green: #34a853;
+  --google-gray: #1a1a1a;
+  --google-gray-dark: #2d2d2d;
+  --google-text: #e0e0e0;
+  --google-border: #444444;
+  --elev-1: 0 1px 3px rgba(0,0,0,.6), 0 4px 8px rgba(0,0,0,.4);
 }
 
 /* -------------------------------------------------- */
@@ -71,7 +74,7 @@ a:hover {
 .widget-container {
   border-radius: 12px;
   box-shadow: var(--elev-1);
-  background: #ffffff;
+  background: #222222;
   border: 1px solid var(--google-border);
   margin-bottom: 1.25rem;
 }
@@ -124,7 +127,7 @@ a:hover {
 .dashlet table thead th,
 .widgetPanel table thead th,
 .widget-container table thead th {
-  background: #e8eaed !important;   /* slightly darker gray for readability */
+  background: var(--google-gray-dark-dark) !important;
   color: var(--google-text) !important;
   font-weight: 500;
   padding: .5rem .75rem;
