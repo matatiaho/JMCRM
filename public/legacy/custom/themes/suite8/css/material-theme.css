@@ -409,10 +409,37 @@ button.dashboard-action {
   background: var(--google-gray-dark);
   color: var(--google-text) !important;
   border-radius: 4px;
+  padding: 8px 15px;
+  transition: background-color 0.2s ease;
 }
 
 #dashboard ul.nav-dashboard li a:hover,
 #tab-actions > a.dropdown-toggle:hover,
 button.dashboard-action:hover {
+  background: var(--google-gray-dark-dark);
+  text-decoration: none;
+}
+
+#dashboard ul.nav-dashboard li.active a {
+  background: var(--google-gray-dark-dark);
+}
+
+#dashboard ul.nav-dashboard li.active a:hover {
+  background: var(--google-gray-dark-dark);
+}
+
+#dashboard #tab-actions ul.dropdown-menu {
+  background: var(--google-gray-dark);
+  border: none;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+#dashboard #tab-actions ul.dropdown-menu .button {
+  background: var(--google-gray-dark);
+  color: var(--google-text);
+}
+
+#dashboard #tab-actions ul.dropdown-menu .button:hover {
   background: var(--google-gray-dark-dark);
 }
