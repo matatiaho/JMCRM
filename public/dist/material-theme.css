@@ -644,3 +644,15 @@ table.view {
   justify-content: center !important;
   line-height: 1 !important;
 }
+
+/* --- Dark-Gray Tweaks 2025-06-12 ------------------- */
+/* 1. Hide footer copyright links */
+.copyright-links{display:none!important;}
+
+/* 2. Add spacing between module icons and text */
+.suitepicon[class*="module-"]{margin-right:.5rem;}
+
+/* 3. Hide mobile duplicate dashboard tab on desktop */
+@media (min-width:992px){
+  ul.nav-dashboard li a.first-tab-xs{display:none!important;}
+}
