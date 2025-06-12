@@ -458,3 +458,70 @@ button,
   transform: translateY(0);
   box-shadow: 0 1px 3px rgba(0,0,0,.08);
 }
+
+/* =============================
+   2025 Dark Theme Overrides
+   ============================= */
+:root {
+  --google-blue: #1f2937;             /* dark navbar/card header */
+  --google-blue-dark: #111827;        /* darker hover */
+  --google-gray: #0f172a;             /* page background */
+  --google-gray-dark: #1f2937;        /* text on dark */
+  --google-text: #e5e7eb;             /* light text */
+  --google-border: #374151;           /* subtle border */
+}
+
+html,
+body {
+  background: var(--google-gray);
+  color: var(--google-text);
+}
+
+/* navbar */
+.navbar,
+.navbar-default {
+  background: var(--google-blue) !important;
+}
+
+/* cards/dashlets */
+.dashletPanel,
+.widgetPanel,
+.widget-container {
+  background: #1e293b;
+  border: 1px solid var(--google-border);
+}
+
+/* card headers */
+.dashletPanelMenuBar,
+.dashletPanel .hd,
+.dashlet .header,
+.dashlet .dashlet-header,
+.widget-header,
+.widgetPanel .card-header {
+  background: var(--google-blue) !important;
+  color: var(--google-text) !important;
+}
+
+/* table header inside dashlet */
+.dashletPanel table thead th,
+.dashlet table thead th,
+.widgetPanel table thead th,
+.widget-container table thead th {
+  background: #374151 !important;
+  color: var(--google-text) !important;
+}
+
+/* buttons */
+.btn-primary,
+.action-button,
+.quickcreate-button {
+  background: var(--google-blue);
+  border-color: var(--google-blue);
+}
+
+.btn-primary:hover,
+.action-button:hover,
+.quickcreate-button:hover {
+  background: var(--google-blue-dark);
+  border-color: var(--google-blue-dark);
+}
