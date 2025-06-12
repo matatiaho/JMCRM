@@ -682,3 +682,9 @@ ul.nav-dashboard li a.first-tab-xs{display:none!important;}
 .dashletPanel .hd {
   border-bottom:none!important;
 }
+
+/* Robust hide for any duplicate SuiteCRM Dashboard mobile tab */
+ul.nav-dashboard li.first-tab-menu-xs, /* some themes label li */
+ul.nav-dashboard li a.first-tab-xs {
+  display:none!important;
+}
