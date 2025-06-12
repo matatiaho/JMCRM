@@ -694,4 +694,5 @@ ul.nav-dashboard li a.first-tab-xs {
 
 .dashletPanel .hd span{margin-right:8px;}
 
-.dashlet .dashlet-title{margin-left:auto;}
+.dashlet .dashlet-title{margin-left:0!important;}
+.dashletPanelMenuBar .dashlet-toolbar{margin-left:auto!important;}
