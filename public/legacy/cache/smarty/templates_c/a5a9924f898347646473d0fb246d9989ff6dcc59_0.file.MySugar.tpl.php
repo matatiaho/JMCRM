@@ -70,37 +70,6 @@ $_smarty_tpl->tpl_vars['tab']->do_else = false;
                         <?php echo $_smarty_tpl->tpl_vars['dashboardPages']->value[$_smarty_tpl->tpl_vars['tabNum']->value]['pageTitle'];?>
 
                     </a>
-
-                    <a id="xstab<?php echo $_smarty_tpl->tpl_vars['tabNum']->value;?>
-" href="#" class="visible-xs first-tab-xs dropdown-toggle" data-toggle="dropdown">
-                        <?php echo $_smarty_tpl->tpl_vars['dashboardPages']->value[$_smarty_tpl->tpl_vars['tabNum']->value]['pageTitle'];?>
-
-                        <span class="suitepicon suitepicon-action-caret"></span>
-                    </a>
-                    <ul id="first-tab-menu-xs" class="dropdown-menu">
-                        <?php echo smarty_function_counter(array('name'=>"tabCountXS",'start'=>-1,'print'=>false,'assign'=>"tabCountXS"),$_smarty_tpl);?>
-
-                        <?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['dashboardPages']->value, 'xstab', false, 'ta');
-$_smarty_tpl->tpl_vars['xstab']->do_else = true;
-if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['ta']->value => $_smarty_tpl->tpl_vars['xstab']->value) {
-$_smarty_tpl->tpl_vars['xstab']->do_else = false;
-?>
-                            <?php echo smarty_function_counter(array('name'=>"tabCountXS",'print'=>false),$_smarty_tpl);?>
-
-                            <li role="presentation">
-                                <a id="tabxs<?php echo $_smarty_tpl->tpl_vars['tabCountXS']->value;?>
-" href="#tab_content_<?php echo $_smarty_tpl->tpl_vars['tabCountXS']->value;?>
-" data-toggle="tab"  onClick="retrievePage(<?php echo $_smarty_tpl->tpl_vars['tabCountXS']->value;?>
-);">
-                                    <?php echo $_smarty_tpl->tpl_vars['dashboardPages']->value[$_smarty_tpl->tpl_vars['tabCountXS']->value]['pageTitle'];?>
-
-                                </a>
-                            </li>
-                        <?php
-}
-$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-                    </ul>
                 </li>
             <?php } else { ?>
                 <li role="presentation">

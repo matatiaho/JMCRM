@@ -399,15 +399,6 @@ function selectTab(tab) {
   $('#content div.tab-content div.tab-pane-NOBOOTSTRAPTOGGLER').eq(tab).show().addClass('active').addClass('in');
 };
 
-function changeFirstTab(src) {
-  var selected = $(src).attr('id');
-  var selectedHtml = $(selected.context).html();
-  $('#xstab0').html(selectedHtml);
-
-    var i = $(src).parents('li').index();
-    selectTab(parseInt(i));
-    return true;
-}
 // End of custom jQuery
 
 
