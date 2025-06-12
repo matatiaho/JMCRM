@@ -674,3 +674,11 @@ html{scrollbar-color:#5a5a5a #1a1a1a;}
 
 /* Hide duplicate dashboard anchor */
 a#stab0{display:none!important;}
+
+/* --- Hide mobile dashboard tab & remove purple dashlet border --- */
+ul.nav-dashboard li a.first-tab-xs{display:none!important;}
+
+.dashletPanelMenuBar,
+.dashletPanel .hd {
+  border-bottom:none!important;
+}
