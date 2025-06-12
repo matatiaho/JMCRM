@@ -321,13 +321,9 @@ td {
   fill: var(--google-blue) !important;
 }
 
-.dashletNonTable {
-  background: var(--google-gray-dark);
-}
-
-.post_txt_username {
-    color: #fff;
-    font-size: 16px;
+.nav-item.active .home-nav-link svg,
+.nav-item.active .home-nav-link svg * {
+  fill: var(--google-text) !important;
 }
 
 .nav-item.active .nav-link-nongrouped, .nav-item.active .nav-link-grouped, .nav-item.active .home-nav-link {
