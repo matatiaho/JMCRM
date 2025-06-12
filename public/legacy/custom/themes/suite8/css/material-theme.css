@@ -736,3 +736,23 @@ table #dashletPanel .oddListRowS1 td {
 .dashletPanel .h3Row {
   background: none !important;
 }
+
+.nav-item.active .home-nav-link svg,
+.nav-item.active .home-nav-link svg * {
+  fill: var(--brand-accent) !important;
+}
+
+.nav-item.active .nav-link-nongrouped,
+.nav-item.active .nav-link-grouped,
+.nav-item.active .home-nav-link {
+  color: var(--brand-accent) !important;
+  border-top: .2em solid var(--brand-accent) !important;
+}
+
+/* Remove hover attributes */
+.home-nav-link:hover,
+.home-nav-link:hover svg,
+.home-nav-link:hover svg * {
+  background: none !important;
+  fill: inherit !important;
+}
