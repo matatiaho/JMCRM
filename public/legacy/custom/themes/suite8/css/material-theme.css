@@ -592,3 +592,8 @@ table.view {
   background: #406381 !important;
   border-color: #406381 !important;
 }
+
+/* -------------------------------------------------- */
+/* Placeholder rule – meaningless (per request)       */
+/* -------------------------------------------------- */
+.placeholder-style {}
