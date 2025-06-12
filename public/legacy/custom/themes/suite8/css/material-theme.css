@@ -322,9 +322,15 @@ td {
   fill: var(--google-blue) !important;
 }
 
+/* Condensed: Active home nav icon color */
 .nav-item.active .home-nav-link svg,
 .nav-item.active .home-nav-link svg * {
   fill: var(--google-text) !important;
+}
+
+.nav-item.active .home-nav-link {
+  color: var(--google-blue) !important;
+  border-top: .2em solid var(--google-blue);
 }
 
 .nav-item.active .nav-link-nongrouped, .nav-item.active .nav-link-grouped, .nav-item.active .home-nav-link {
@@ -665,15 +671,6 @@ ul.nav-dashboard li a.first-tab-xs {
 .home-nav-link:hover{background:none!important;}
 .home-nav-link:hover svg,
 .home-nav-link:hover svg *{fill:var(--google-blue)!important;}
-
-/* --- Active home link icon hover color 2025-06-12 --- */
-@media (min-width: 62em) {
-  .nav-item.active .home-nav-link:hover svg,
-  .nav-item.active .home-nav-link:hover svg path,
-  .nav-item.active .home-nav-link:hover svg polygon {
-    fill: var(--google-blue) !important;
-  }
-}
 
 /* Add consolidated hover & svg fill rule below */
 .navbar .navbar-action-group .action-link:hover{
