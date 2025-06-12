@@ -1,4 +1,4 @@
-{$Flash}
+<span class="alerts-none">{$Flash}</span>
 
 {if !$Flash}
 <div class="clear-all-alerts-container">

@@ -670,3 +670,5 @@ ul.nav-dashboard li a.first-tab-xs {
 .navbar .navbar-action-group .action-link:hover svg polygon{
   fill:#fff!important;
 }
+
+.alerts-none { color: #fff !important; }
