@@ -23,10 +23,10 @@
 /* -------------------------------------------------- */
 html,
 body {
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
   background: var(--google-gray);
   color: var(--google-text);
-  line-height: 1.6;
+  line-height: 1.5;
 }
 
 a {
@@ -43,14 +43,16 @@ a:hover {
 /* -------------------------------------------------- */
 .navbar,
 .navbar-default {
-  background: var(--google-blue) !important;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, .08);
+  background: var(--google-gray-dark) !important;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
 }
 
 .navbar a,
 .navbar .nav-link,
 .navbar-default .navbar-nav > li > a {
   color: #fff !important;
+  font-weight: 500;
 }
 
 .navbar a:hover,
@@ -72,10 +74,10 @@ a:hover {
 .dashletPanel,
 .widgetPanel,
 .widget-container {
-  border-radius: 12px;
-  box-shadow: var(--elev-1);
   background: #222222;
   border: 1px solid var(--google-border);
+  border-radius: 8px;
+  box-shadow: var(--elev-1);
   margin-bottom: 1.25rem;
 }
 
@@ -87,10 +89,8 @@ a:hover {
 .dashlet .dashlet-title,
 .widget-header,
 .widgetPanel .card-header {
-  background: var(--google-blue) !important;
+  background: var(--google-gray-dark) !important;
   color: #fff !important;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
   font-weight: 500;
   padding: .5rem .75rem;
   display: flex;
@@ -155,30 +155,29 @@ a:hover {
 /* -------------------------------------------------- */
 button,
 .btn {
-  border-radius: 8px;
+  border-radius: 4px;
   font-weight: 500;
-  transition: background .15s ease, box-shadow .15s ease, transform .1s;
+  transition: box-shadow .2s, background-color .2s;
+}
+
+button:hover,
+.btn:hover {
+  box-shadow: 0 2px 6px rgba(60, 64, 67, .15);
 }
 
 .btn-primary,
 .action-button,
 .quickcreate-button {
-  background: var(--google-blue);
-  border-color: var(--google-blue);
+  background: var(--google-gray-dark);
+  border-color: var(--google-gray-dark);
+  color: #fff;
 }
 
 .btn-primary:hover,
 .action-button:hover,
 .quickcreate-button:hover {
-  background: var(--google-blue-dark);
-  border-color: var(--google-blue-dark);
-  box-shadow: 0 2px 6px rgba(0,0,0,.12);
-  transform: translateY(-1px);
-}
-
-.btn:active {
-  transform: translateY(0);
-  box-shadow: 0 1px 3px rgba(0,0,0,.08);
+  background: var(--google-gray-dark-dark);
+  border-color: var(--google-gray-dark-dark);
 }
 
 .btn-outline-primary {
@@ -371,90 +370,4 @@ g[Attributes Style] {
 
 #pageContainer .dashletcontainer .hd {
   border-radius: 3px;
-}
-
-/* =============================
-   2025 Design Refresh Overrides
-   ============================= */
-
-:root {
-  --google-blue: #2563eb;              /* primary brand */
-  --google-blue-dark: #1e40af;         /* hover/active  */
-  --google-gray: #f8fafc;              /* page bg       */
-  --google-gray-dark: #1f2937;         /* navbar text   */
-  --google-text: #374151;              /* body text     */
-  --google-border: #e2e8f0;            /* subtle lines  */
-  --elev-1: 0 1px 3px rgba(0,0,0,.06), 0 4px 8px rgba(0,0,0,.04);
-}
-
-html,
-body {
-  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background: var(--google-gray);
-  color: var(--google-text);
-  line-height: 1.6;
-}
-
-/* ----------------------------- NAV BAR ----------------------------- */
-.navbar,
-.navbar-default {
-  background: var(--google-blue) !important;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, .08);
-}
-
-.navbar a,
-.navbar .nav-link,
-.navbar-default .navbar-nav > li > a {
-  color: #fff !important;
-}
-
-/* -------------------- DASHLET / WIDGET CARDS ----------------------- */
-.dashletPanel,
-.widgetPanel,
-.widget-container {
-  border-radius: 12px;
-  box-shadow: var(--elev-1);
-  background: #ffffff;
-  border: 1px solid var(--google-border);
-}
-
-.dashletPanelMenuBar,
-.dashletPanel .hd,
-.dashlet .header,
-.dashlet .dashlet-header,
-.widget-header,
-.widgetPanel .card-header {
-  background: var(--google-blue) !important;
-  color: #fff !important;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-}
-
-/* ------------------------------ BUTTONS ---------------------------- */
-button,
-.btn {
-  border-radius: 8px;
-  font-weight: 500;
-  transition: background .15s ease, box-shadow .15s ease, transform .1s;
-}
-
-.btn-primary,
-.action-button,
-.quickcreate-button {
-  background: var(--google-blue);
-  border-color: var(--google-blue);
-}
-
-.btn-primary:hover,
-.action-button:hover,
-.quickcreate-button:hover {
-  background: var(--google-blue-dark);
-  border-color: var(--google-blue-dark);
-  box-shadow: 0 2px 6px rgba(0,0,0,.12);
-  transform: translateY(-1px);
-}
-
-.btn:active {
-  transform: translateY(0);
-  box-shadow: 0 1px 3px rgba(0,0,0,.08);
 }
