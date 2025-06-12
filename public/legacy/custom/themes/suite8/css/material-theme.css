@@ -656,3 +656,22 @@ table.view {
 @media (min-width:992px){
   ul.nav-dashboard li a.first-tab-xs{display:none!important;}
 }
+
+/* --- UI Polish 2025-06-12 -------------------------- */
+/* 1. Hide legacy home tab */
+#xstab0{display:none!important;}
+
+/* 2. Spacing for navbar action icons */
+.navbar .navbar-action-group .action-link{
+  margin-right:10px!important;
+  margin-left:10px;
+}
+
+/* 3. Custom scrollbar (webkit & firefox) */
+html{scrollbar-color:#5a5a5a #1a1a1a;}
+
+/* Chrome, Edge, Safari */
+::-webkit-scrollbar{width:8px;height:8px;}
+::-webkit-scrollbar-track{background:#1a1a1a;}
+::-webkit-scrollbar-thumb{background:#5a5a5a;border-radius:4px;}
+::-webkit-scrollbar-thumb:hover{background:#7a7a7a;}
