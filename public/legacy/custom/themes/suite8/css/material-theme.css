@@ -374,10 +374,6 @@ td {
   color: var(--google-text)
 }
 
-g[Attributes Style] {
-    fill: var(--google-blue);
-}
-
 #pageContainer .dashletcontainer .pagination td {
     background-color: var(--google-gray-dark);
 }
@@ -497,14 +493,50 @@ img.ng-star-inserted.image-company_logo {
 
 /* Dashboard Actions dropdown toggle */
 #dashboard #tab-actions > a.dropdown-toggle {
-  background: var(--brand-accent) !important;
-  color: #fff !important;
+  background: var(--google-gray-dark) !important;
+  height: 38px !important;
+  padding: 8px 15px !important;
 }
 
 #dashboard #tab-actions > a.dropdown-toggle:hover {
-  background: #406381 !important;
+  background: var(--google-gray-dark-dark) !important;
 }
 
 .image-company_logo .ng-star-inserted {
   display: none !important;
+}
+
+/* ------------------------------------------------------------------ */
+/* JMCRM follow-up tweaks                                             */
+/* ------------------------------------------------------------------ */
+/* 1. List view table header */
+.list thead {
+  background: var(--google-gray-dark-dark) !important;
+}
+
+/* 2. Full-record view table */
+table.view {
+  background: #f3f3f3 !important;
+}
+
+/* 3. Odd rows inside dashlets/widgets */
+.dashletPanel table tbody tr:nth-child(odd),
+.dashlet table tbody tr:nth-child(odd),
+.widgetPanel table tbody tr:nth-child(odd),
+.widget-container table tbody tr:nth-child(odd) {
+  background: var(--google-gray-dark) !important;
+}
+
+/* 4 & 5. Action-icons in navbar */
+.navbar .navbar-action-group .action-link {
+  padding: 0 !important;
+}
+
+.navbar .navbar-action-group .action-link:hover {
+  background: var(--brand-accent) !important;
+}
+
+/* SVG colour change on hover without altering whole container */
+.navbar .navbar-action-group .action-link:hover svg {
+  fill: #fff !important;
 }
