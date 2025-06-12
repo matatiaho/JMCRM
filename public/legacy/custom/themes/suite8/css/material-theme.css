@@ -688,3 +688,10 @@ ul.nav-dashboard li.first-tab-menu-xs, /* some themes label li */
 ul.nav-dashboard li a.first-tab-xs {
   display:none!important;
 }
+
+/* Dashlet tweaks */
+.dashletNonTable{background:#222222!important;color:var(--google-text)!important;}
+
+.dashletPanel .hd span{margin-right:8px;}
+
+.dashlet .dashlet-title{margin-left:auto;}
