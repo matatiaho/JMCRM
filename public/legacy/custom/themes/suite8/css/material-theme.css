@@ -627,3 +627,14 @@ table.view {
 .navbar .home-nav-link svg {
   margin-right: 6px !important;
 }
+
+/* ------------------------------------------------------------------ */
+/* JMCRM dashboard button vertical centring (v4)                      */
+/* ------------------------------------------------------------------ */
+#dashboard ul.nav-dashboard li a,
+#dashboard #tab-actions > a.dropdown-toggle {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  line-height: 1 !important;
+}
