@@ -164,6 +164,7 @@ a:hover {
 .widgetPanel table tbody td,
 .widget-container table tbody td {
   color: var(--google-text);
+  background: var(--google-gray-dark) !important;
 }
 
 /* Pagination / footer inside dashlet */
@@ -685,7 +686,43 @@ ul.nav-dashboard li a.first-tab-xs {
   font-size: 1.1em !important;
 }
 
+/* Hide xstab0 and its dropdown menu */
 #xstab0,
-#first-tab-menu-xs {
+#first-tab-menu-xs,
+a[id^="xstab"],
+a[class*="first-tab-xs"],
+ul[id*="first-tab-menu-xs"],
+li:has(a[id^="xstab"]),
+li:has(a[class*="first-tab-xs"]),
+li:has(a:contains("SUITECRM DASHBOARD")),
+li:has(a[href="#"][data-toggle="dropdown"]:contains("SUITECRM DASHBOARD")) {
   display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  position: absolute !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+/* Additional rule to hide the specific button */
+a[href="#"][data-toggle="dropdown"]:contains("SUITECRM DASHBOARD"),
+a.visible-xs.first-tab-xs.dropdown-toggle:contains("SUITECRM DASHBOARD") {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  position: absolute !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  border: 0 !important;
 }
