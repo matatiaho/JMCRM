@@ -65,7 +65,6 @@
         
         <form class="form-signin" role="form" action="index.php" method="post" name="DetailView" id="form"
               onsubmit="return document.getElementById('cant_login').value == ''" autocomplete="off">
-            <div class="companylogo">{$LOGIN_IMAGE}</div>
         <span class="error" id="browser_warning" style="display:none">
             {sugar_translate label="WARN_BROWSER_VERSION_WARNING"}
         </span>

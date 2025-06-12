@@ -546,3 +546,49 @@ table.view {
 .navbar .navbar-action-group .action-link:hover svg {
   fill: #fff !important;
 }
+
+/* ------------------------------------------------------------------ */
+/* JMCRM tweaks – SVG-only hover, icon spacing, button sizing          */
+/* ------------------------------------------------------------------ */
+/* Navbar action icons: margin & SVG hover tint only */
+.navbar .navbar-action-group .action-link {
+  margin-left: 6px !important;
+}
+.navbar .navbar-action-group .action-link:first-child {
+  margin-left: 0 !important;
+}
+
+/* Keep dark BG on hover; tint SVGs to accent */
+.navbar .navbar-action-group .action-link:hover {
+  background: var(--google-gray-dark) !important;
+}
+.navbar .navbar-action-group .action-link:hover svg,
+.navbar .navbar-action-group .action-link:hover svg * {
+  fill: var(--brand-accent) !important;
+}
+
+/* Dashboard buttons – uniform sizing & accent hover */
+#dashboard ul.nav-dashboard li a,
+#dashboard #tab-actions > a.dropdown-toggle {
+  height: 38px !important;
+  line-height: 22px !important;
+  display: inline-flex !important;
+  align-items: center;
+}
+
+#dashboard ul.nav-dashboard li a:hover,
+#dashboard #tab-actions > a.dropdown-toggle:hover {
+  background: var(--brand-accent) !important;
+  color: #fff !important;
+}
+
+/* Dashlet NonTable submit buttons */
+.dashletNonTable input[type="submit"] {
+  background: var(--brand-accent) !important;
+  border-color: var(--brand-accent) !important;
+  color: #fff !important;
+}
+.dashletNonTable input[type="submit"]:hover {
+  background: #406381 !important;
+  border-color: #406381 !important;
+}
