@@ -591,3 +591,24 @@ table.view {
   background: #406381 !important;
   border-color: #406381 !important;
 }
+
+/* ------------------------------------------------------------------ */
+/* JMCRM button alignment & profile hover (v3)                        */
+/* ------------------------------------------------------------------ */
+/* Center dashboard & actions link text */
+#dashboard ul.nav-dashboard li a,
+#dashboard #tab-actions > a.dropdown-toggle {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+/* Profile/settings icon hover – accent svg fill */
+@media (min-width: 62em) {
+  .navbar .nav-link:hover svg,
+  .navbar .nav-link:hover svg path,
+  .navbar .nav-link:hover svg polygon {
+    fill: var(--brand-accent) !important;
+  }
+}
