@@ -659,7 +659,7 @@ ul.nav-dashboard li a.first-tab-xs {
   .nav-item.active .home-nav-link:hover svg,
   .nav-item.active .home-nav-link:hover svg path,
   .nav-item.active .home-nav-link:hover svg polygon {
-    fill: var(--google-blue) !important;
+    fill: var(--brand-accent) !important;
   }
 }
 
@@ -755,5 +755,3 @@ table #dashletPanel .oddListRowS1 td {
 .home-nav-link:hover svg * {
   fill: var(--brand-accent) !important;
 }
-
-/* Sync commit: home nav hover accent, both CSS files identical (2025-06-12) */

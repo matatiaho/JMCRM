@@ -659,7 +659,7 @@ ul.nav-dashboard li a.first-tab-xs {
   .nav-item.active .home-nav-link:hover svg,
   .nav-item.active .home-nav-link:hover svg path,
   .nav-item.active .home-nav-link:hover svg polygon {
-    fill: var(--google-blue) !important;
+    fill: var(--brand-accent) !important;
   }
 }
 
