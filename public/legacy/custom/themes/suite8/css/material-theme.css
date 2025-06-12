@@ -466,11 +466,18 @@ button.dashboard-action:hover {
 /* Navbar link & action-icon colours               */
 /* ----------------------------------------------- */
 .navbar .navbar-action-group .action-link {
-  background: var(--google-gray-dark);
-  padding: 6px 10px;
-  border-radius: 4px;
-  color: var(--google-text) !important;
-  transition: background-color .2s ease;
+  padding: 0 !important;
+  margin-right: 4px !important;
+}
+
+.navbar .navbar-action-group .action-link:hover {
+  background: var(--google-gray-dark) !important;
+}
+
+.navbar .navbar-action-group .action-link:hover svg,
+.navbar .navbar-action-group .action-link:hover svg path,
+.navbar .navbar-action-group .action-link:hover svg polygon {
+  fill: var(--brand-accent) !important;
 }
 
 /* Hide any lingering SuiteCRM logo images */
@@ -539,4 +546,48 @@ table.view {
 /* SVG colour change on hover without altering whole container */
 .navbar .navbar-action-group .action-link:hover svg {
   fill: #fff !important;
+}
+
+/* ------------------------------------------------------------------ */
+/* JMCRM icon & button hover tweaks (v2)                              */
+/* ------------------------------------------------------------------ */
+/* Navbar action icons – keep dark background, accent SVG on hover & spacing */
+.navbar .navbar-action-group .action-link {
+  padding: 0 !important;
+  margin-right: 4px !important;
+}
+
+.navbar .navbar-action-group .action-link:hover {
+  background: var(--google-gray-dark) !important;
+}
+
+.navbar .navbar-action-group .action-link:hover svg,
+.navbar .navbar-action-group .action-link:hover svg path,
+.navbar .navbar-action-group .action-link:hover svg polygon {
+  fill: var(--brand-accent) !important;
+}
+
+/* Dashboard navigation buttons (uniform sizing & accent hover) */
+#dashboard ul.nav-dashboard li a,
+#dashboard #tab-actions > a.dropdown-toggle {
+  height: 38px !important;
+  padding: 8px 15px !important;
+}
+
+#dashboard ul.nav-dashboard li a:hover,
+#dashboard #tab-actions > a.dropdown-toggle:hover {
+  background: var(--brand-accent) !important;
+  color: #fff !important;
+}
+
+/* DashletNonTable submit buttons */
+.dashletNonTable input[type="submit"] {
+  background: var(--brand-accent) !important;
+  border-color: var(--brand-accent) !important;
+  color: #fff !important;
+}
+
+.dashletNonTable input[type="submit"]:hover {
+  background: #406381 !important;
+  border-color: #406381 !important;
 }
