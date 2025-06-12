@@ -755,5 +755,3 @@ table #dashletPanel .oddListRowS1 td {
 .home-nav-link:hover svg * {
   fill: var(--brand-accent) !important;
 }
-
-/* Sync commit: home nav hover accent, both CSS files identical (2025-06-12) */
