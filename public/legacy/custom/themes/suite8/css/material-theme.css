@@ -682,5 +682,10 @@ ul.nav-dashboard li a.first-tab-xs {
 
 .global-links-dropdown .global-user-name {
   color: var(--brand-accent) !important;
-  font-size: 1.5em !important;
+  font-size: 1.1em !important;
+}
+
+#xstab0,
+#first-tab-menu-xs {
+  display: none !important;
 }
