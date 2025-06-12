@@ -363,12 +363,9 @@ function selectTab(tab) {
 
 function changeFirstTab(src) {
   var selected = $(src).attr('id');
-  var selectedHtml = $(selected.context).html();
-  $('#xstab0').html(selectedHtml);
-
-    var i = $(src).parents('li').index();
-    selectTab(parseInt(i));
-    return true;
+  var i = $(src).parents('li').index();
+  selectTab(parseInt(i));
+  return true;
 }
 // End of custom jQuery
 
