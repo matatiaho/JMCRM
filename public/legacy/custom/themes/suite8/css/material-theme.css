@@ -728,3 +728,7 @@ a.visible-xs.first-tab-xs.dropdown-toggle:contains("SUITECRM DASHBOARD") {
   padding: 0 !important;
   border: 0 !important;
 }
+
+table #dashletPanel .oddListRowS1 td {
+  color: var(--google-text) !important;
+}
