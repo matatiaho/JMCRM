@@ -753,6 +753,5 @@ table #dashletPanel .oddListRowS1 td {
 .home-nav-link:hover,
 .home-nav-link:hover svg,
 .home-nav-link:hover svg * {
-  background: none !important;
-  fill: inherit !important;
+  fill: var(--brand-accent) !important;
 }
