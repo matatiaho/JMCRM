@@ -60,8 +60,8 @@ a:hover {
 .navbar .nav-link:hover,
 .navbar-default .navbar-nav > li > a:hover,
 .navbar .navbar-action-group .action-link:hover {
-  background: var(--brand-accent) !important;
-  color: #fff !important;
+  background: var(--google-gray-dark-dark) !important;
+  color: var(--google-text) !important;
 }
 
 .search-bar .input-group {
@@ -473,7 +473,11 @@ button.dashboard-action:hover {
   transition: background-color .2s ease;
 }
 
-/* Hide any lingering SuiteCRM logo images */
+/* ------------------------------------------------------------------ */
+/* JMCRM custom overrides                                             */
+/* ------------------------------------------------------------------ */
+/* Hide SuiteCRM logo on login screen */
+.image-company_logo .ng-star-inserted,
 img.image-company_logo,
 img.ng-star-inserted.image-company_logo {
   display: none !important;
@@ -491,7 +495,13 @@ img.ng-star-inserted.image-company_logo {
   border-color: #406381 !important;
 }
 
-/* Dashboard Actions dropdown toggle */
+/* Navbar action icons hover background */
+.navbar .navbar-action-group .action-link:hover {
+  background: var(--brand-accent) !important;
+  color: #fff !important;
+}
+
+/* Dashboard "Actions" dropdown toggle */
 #dashboard #tab-actions > a.dropdown-toggle {
   background: var(--google-gray-dark) !important;
   height: 38px !important;
@@ -500,10 +510,6 @@ img.ng-star-inserted.image-company_logo {
 
 #dashboard #tab-actions > a.dropdown-toggle:hover {
   background: var(--google-gray-dark-dark) !important;
-}
-
-.image-company_logo .ng-star-inserted {
-  display: none !important;
 }
 
 /* ------------------------------------------------------------------ */
@@ -539,4 +545,50 @@ table.view {
 /* SVG colour change on hover without altering whole container */
 .navbar .navbar-action-group .action-link:hover svg {
   fill: #fff !important;
+}
+
+/* ------------------------------------------------------------------ */
+/* JMCRM tweaks – SVG-only hover, icon spacing, button sizing          */
+/* ------------------------------------------------------------------ */
+/* Navbar action icons: margin & SVG hover tint only */
+.navbar .navbar-action-group .action-link {
+  margin-left: 6px !important;
+}
+.navbar .navbar-action-group .action-link:first-child {
+  margin-left: 0 !important;
+}
+
+/* Keep dark BG on hover; tint SVGs to accent */
+.navbar .navbar-action-group .action-link:hover {
+  background: var(--google-gray-dark) !important;
+}
+.navbar .navbar-action-group .action-link:hover svg,
+.navbar .navbar-action-group .action-link:hover svg * {
+  fill: var(--brand-accent) !important;
+}
+
+/* Dashboard buttons – uniform sizing & accent hover */
+#dashboard ul.nav-dashboard li a,
+#dashboard #tab-actions > a.dropdown-toggle {
+  height: 38px !important;
+  line-height: 22px !important;
+  display: inline-flex !important;
+  align-items: center;
+}
+
+#dashboard ul.nav-dashboard li a:hover,
+#dashboard #tab-actions > a.dropdown-toggle:hover {
+  background: var(--brand-accent) !important;
+  color: #fff !important;
+}
+
+/* Dashlet NonTable submit buttons */
+.dashletNonTable input[type="submit"] {
+  background: var(--brand-accent) !important;
+  border-color: var(--brand-accent) !important;
+  color: #fff !important;
+}
+.dashletNonTable input[type="submit"]:hover {
+  background: #406381 !important;
+  border-color: #406381 !important;
 }
