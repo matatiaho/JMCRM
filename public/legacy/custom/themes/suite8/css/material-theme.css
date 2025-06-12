@@ -60,7 +60,8 @@ a:hover {
 .navbar .nav-link:hover,
 .navbar-default .navbar-nav > li > a:hover,
 .navbar .navbar-action-group .action-link:hover {
-  background: var(--google-gray-dark-dark) !important;
+  background: var(--google-gray-dark) !important;
+  padding: .8em 1em 1em .5em !important;
   color: var(--google-text) !important;
 }
 
@@ -696,3 +697,11 @@ ul.nav-dashboard li a.first-tab-xs {
 
 .dashlet .dashlet-title{margin-left:0!important;}
 .dashletPanelMenuBar .dashlet-toolbar{margin-left:auto!important;}
+
+@media (min-width: 62em) {
+  .nav-item.active .home-nav-link:hover svg,
+  .nav-item.active .home-nav-link:hover svg path,
+  .nav-item.active .home-nav-link:hover svg polygon {
+    fill: var(--google-blue) !important;
+  }
+}
