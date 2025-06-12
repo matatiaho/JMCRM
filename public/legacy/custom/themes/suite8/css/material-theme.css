@@ -64,7 +64,15 @@ a:hover {
 .search-bar .input-group {
   border: 1px solid var(--google-border);
   border-radius: 4px;
-  background: #fff;
+  background: #2a2a2a;
+}
+
+.search-bar .input-group input,
+.navbar input[type="text"],
+.navbar input[type="search"] {
+  background: #2a2a2a;
+  color: var(--google-text);
+  border: none;
 }
 
 /* -------------------------------------------------- */
@@ -392,4 +400,19 @@ g[Attributes Style] {
 .panel,
 .panel-card {
   background: #1e1e1e;
+}
+
+/* Dashboard & Actions buttons */
+#dashboard ul.nav-dashboard li a,
+#tab-actions > a.dropdown-toggle,
+button.dashboard-action {
+  background: var(--google-gray-dark);
+  color: var(--google-text) !important;
+  border-radius: 4px;
+}
+
+#dashboard ul.nav-dashboard li a:hover,
+#tab-actions > a.dropdown-toggle:hover,
+button.dashboard-action:hover {
+  background: var(--google-gray-dark-dark);
 }

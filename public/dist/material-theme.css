@@ -64,7 +64,15 @@ a:hover {
 .search-bar .input-group {
   border: 1px solid var(--google-border);
   border-radius: 4px;
-  background: #fff;
+  background: #2a2a2a;
+}
+
+.search-bar .input-group input,
+.navbar input[type="text"],
+.navbar input[type="search"] {
+  background: #2a2a2a;
+  color: var(--google-text);
+  border: none;
 }
 
 /* -------------------------------------------------- */
@@ -134,13 +142,25 @@ a:hover {
 }
 
 .dashletPanel table tbody tr:nth-child(even),
-.dashlet table tbody tr:nth-child(even) {
-  background: #fff;
+.dashlet table tbody tr:nth-child(even),
+.widgetPanel table tbody tr:nth-child(even),
+.widget-container table tbody tr:nth-child(even) {
+  background: #2a2a2a;
 }
 
 .dashletPanel table tbody tr:nth-child(odd),
-.dashlet table tbody tr:nth-child(odd) {
-  background: var(--google-gray-dark);
+.dashlet table tbody tr:nth-child(odd),
+.widgetPanel table tbody tr:nth-child(odd),
+.widget-container table tbody tr:nth-child(odd) {
+  background: #242424;
+}
+
+/* lighten table body text */
+.dashletPanel table tbody td,
+.dashlet table tbody td,
+.widgetPanel table tbody td,
+.widget-container table tbody td {
+  color: var(--google-text);
 }
 
 /* Pagination / footer inside dashlet */
@@ -370,4 +390,29 @@ g[Attributes Style] {
 
 #pageContainer .dashletcontainer .hd {
   border-radius: 3px;
+}
+
+/* off-white panels */
+.dashletPanel,
+.widgetPanel,
+.widget-container,
+.card,
+.panel,
+.panel-card {
+  background: #1e1e1e;
+}
+
+/* Dashboard & Actions buttons */
+#dashboard ul.nav-dashboard li a,
+#tab-actions > a.dropdown-toggle,
+button.dashboard-action {
+  background: var(--google-gray-dark);
+  color: var(--google-text) !important;
+  border-radius: 4px;
+}
+
+#dashboard ul.nav-dashboard li a:hover,
+#tab-actions > a.dropdown-toggle:hover,
+button.dashboard-action:hover {
+  background: var(--google-gray-dark-dark);
 }
