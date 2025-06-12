@@ -462,19 +462,12 @@ button.dashboard-action:hover {
 /* ----------------------------------------------- */
 /* Navbar link & action-icon colours               */
 /* ----------------------------------------------- */
-.navbar .navbar-action-group .action-link {
-  padding: 0 !important;
-  margin-right: 4px !important;
-}
+/* Duplicate navbar action-icon rules removed – see consolidated rule at bottom */
 
+/* Navbar action icons hover background */
 .navbar .navbar-action-group .action-link:hover {
-  background: var(--google-gray-dark) !important;
-}
-
-.navbar .navbar-action-group .action-link:hover svg,
-.navbar .navbar-action-group .action-link:hover svg path,
-.navbar .navbar-action-group .action-link:hover svg polygon {
-  fill: var(--brand-accent) !important;
+  background: var(--brand-accent) !important;
+  color: #fff !important;
 }
 
 /* ------------------------------------------------------------------ */
@@ -497,12 +490,6 @@ img.ng-star-inserted.image-company_logo {
 .login-button:hover {
   background: #406381 !important;
   border-color: #406381 !important;
-}
-
-/* Navbar action icons hover background */
-.navbar .navbar-action-group .action-link:hover {
-  background: var(--brand-accent) !important;
-  color: #fff !important;
 }
 
 /* Dashboard "Actions" dropdown toggle */
@@ -538,36 +525,12 @@ table.view {
 }
 
 /* 4 & 5. Action-icons in navbar */
-.navbar .navbar-action-group .action-link {
-  padding: 0 !important;
-}
+/* deletion start */
+/* deletion end */
 
-.navbar .navbar-action-group .action-link:hover {
-  background: var(--brand-accent) !important;
-}
-
-/* SVG colour change on hover without altering whole container */
-.navbar .navbar-action-group .action-link:hover svg {
-  fill: #fff !important;
-}
-
-/* ------------------------------------------------------------------ */
-/* JMCRM icon & button hover tweaks (v2)                              */
-/* ------------------------------------------------------------------ */
 /* Navbar action icons – keep dark background, accent SVG on hover & spacing */
 .navbar .navbar-action-group .action-link {
-  padding: 0 !important;
-  margin-right: 4px !important;
-}
-
-.navbar .navbar-action-group .action-link:hover {
-  background: var(--google-gray-dark) !important;
-}
-
-.navbar .navbar-action-group .action-link:hover svg,
-.navbar .navbar-action-group .action-link:hover svg path,
-.navbar .navbar-action-group .action-link:hover svg polygon {
-  fill: var(--brand-accent) !important;
+  margin: 0 10px !important;
 }
 
 /* Dashboard navigation buttons (uniform sizing & accent hover) */
@@ -660,8 +623,8 @@ table.view {
 
 /* 2. Spacing for navbar action icons */
 .navbar .navbar-action-group .action-link{
-  margin-right:10px!important;
-  margin-left:10px;
+  padding:0!important;
+  margin:0 10px!important;
 }
 
 /* 3. Custom scrollbar (webkit & firefox) */
@@ -710,4 +673,15 @@ ul.nav-dashboard li a.first-tab-xs {
   .nav-item.active .home-nav-link:hover svg polygon {
     fill: var(--google-blue) !important;
   }
+}
+
+/* Add consolidated hover & svg fill rule below */
+.navbar .navbar-action-group .action-link:hover{
+  background:var(--brand-accent)!important;
+  color:#fff!important;
+}
+.navbar .navbar-action-group .action-link:hover svg,
+.navbar .navbar-action-group .action-link:hover svg path,
+.navbar .navbar-action-group .action-link:hover svg polygon{
+  fill:#fff!important;
 }
