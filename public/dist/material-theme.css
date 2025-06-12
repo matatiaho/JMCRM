@@ -674,3 +674,8 @@ ul.nav-dashboard li a.first-tab-xs {
 .alerts-none { color: #fff !important; }
 
 .dropdown-menu { color: #fff !important; }
+
+.action-new .dropdown-menu .new-list-item-header {
+  color: var(--google-blue) !important;
+  font-size: 1.5em !important;
+}
