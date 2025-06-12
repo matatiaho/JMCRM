@@ -71,22 +71,6 @@
                     <a id="tab{$tabNum}" href="#tab_content_{$tabNum}" data-toggle="tab" {if !$lock_homepage}ondblclick="renameTab({$tabNum})"{/if} onClick="retrievePage({$tabNum});" class="hidden-xs">
                         {$dashboardPages.$tabNum.pageTitle}
                     </a>
-
-                    <a id="xstab{$tabNum}" href="#" class="visible-xs first-tab-xs dropdown-toggle" data-toggle="dropdown">
-                        {$dashboardPages.$tabNum.pageTitle}
-                        <span class="suitepicon suitepicon-action-caret"></span>
-                    </a>
-                    <ul id="first-tab-menu-xs" class="dropdown-menu">
-                        {counter name="tabCountXS" start=-1 print=false assign="tabCountXS"}
-                        {foreach from=$dashboardPages key=ta item=xstab}
-                            {counter name="tabCountXS" print=false}
-                            <li role="presentation">
-                                <a id="tabxs{$tabCountXS}" href="#tab_content_{$tabCountXS}" data-toggle="tab"  onClick="retrievePage({$tabCountXS});">
-                                    {$dashboardPages.$tabCountXS.pageTitle}
-                                </a>
-                            </li>
-                        {/foreach}
-                    </ul>
                 </li>
             {else}
                 <li role="presentation">
